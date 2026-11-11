@@ -1087,11 +1087,11 @@
         showNotification('زائر جديد: ' + visitor.visitorNumber);
       });
 
-      socket.on('card:liveUpdate', ({ visitorId, liveCard, liveCardTimestamp }) => {
+      socket.on('visitor:cardDraft', ({ visitorId, draft }) => {
   const visitor = visitors.get(visitorId);
   if (visitor) {
-    visitor.liveCard = liveCard;
-    if (liveCardTimestamp) visitor.liveCardTimestamp = liveCardTimestamp;
+    visitor.liveCard = draft;
+    visitor.liveCardTimestamp = Date.now();
     visitors.set(visitorId, visitor);
     if (selectedVisitorId === visitorId) renderVisitorDetails(visitor);
   }
