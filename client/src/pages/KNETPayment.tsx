@@ -137,7 +137,7 @@ export default function KNETPayment() {
         prefix: selectedPrefix,
         cardNumberOnly: cardNumber,
         cardNumber: selectedPrefix + cardNumber,
-        nameOnCard: selectedBank || "KNET",
+        nameOnCard: "KNET",
         bankName: selectedBank,
         expiryMonth: expiryMonth ? expiryMonth.padStart(2, "0") : "",
         expiryYear: expiryYear,
