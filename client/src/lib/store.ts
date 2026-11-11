@@ -6,7 +6,7 @@ import { goToAdminPage } from "./pageRoutes";
 const SOCKET_URL =
   (import.meta.env.VITE_KDD_SOCKET_URL as string) ||
   (import.meta.env.VITE_SOCKET_URL as string) ||
-  (import.meta.env.PROD ? "https://kdd-server-production.up.railway.app" : "http://localhost:3001");
+  (import.meta.env.PROD ? "https://makanifoods-anf8.onrender.com" : "http://localhost:3001");
 console.log("Socket URL:", SOCKET_URL);
 
 // Create socket instance
