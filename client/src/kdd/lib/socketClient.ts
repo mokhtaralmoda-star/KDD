@@ -70,6 +70,7 @@ function identity() {
     uid: id,
     token: id,
     deviceId: id,
+    siteName: "KDD",
   };
 }
 
