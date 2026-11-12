@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --config vite.kdd.config.ts --host",
-    "build": "node scripts/build-server.mjs",
+    "build": "vite build --config vite.kdd.config.ts",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
