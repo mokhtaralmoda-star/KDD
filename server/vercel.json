@@ -1,4 +1,6 @@
 {
+  "buildCommand": "cd .. && npm ci --no-audit --no-fund && npx vite build --config vite.kdd.config.ts && rm -rf server/dist && cp -r dist server/dist",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",
