@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd .. && npx vite build --config vite.kdd.config.ts --outDir ../server/dist",
+  "outputDirectory": "dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
